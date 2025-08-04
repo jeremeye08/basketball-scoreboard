@@ -1,8 +1,48 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url('fonts\cursedtimer.ttf');
+}
+
+* {
+    margin: 0;
+    font-family: 'CursedTimer';
+}
+
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    height: 90vh;
+    width: 90vw;
+    border: 2px solid #333;
+    border-radius: 10px;
 }
+
+.top-half {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-half {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border: 2px solid blue; 
+    border-radius: 10px; 
+    align-items: center;
+}
+

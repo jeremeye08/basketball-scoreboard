@@ -1,14 +1,85 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <title>Basketball Scoreboard</title>
     </head>
     <body>
         <div class="container">
-            <div>
-                <h3>HOME</h3>
+            <!-- Top Half of the Container -->
+            <div class="top-half">
+                <!-- Home Box -->
+                <div class="team">
+                    <h3 class="headers">HOME</h3>
+                    <div class="score">
+                        <span id="score-points-home">#</span>
+                    </div>
+                    <div class="add-points">
+                        <button class="add-points-el">+1</button>
+                        <button class="add-points-el">+2</button>
+                        <button class="add-points-el">+3</button>
+                    </div>
+                </div>
+                <!-- Timer + Period Box -->
+                <div class="timer-period">
+                    <div class="timer">
+                        <span id="timer-el">#</span>
+                    </div>
+                    <button id="new-game"><h3>NEW GAME</h3></button>
+                    <h3>PERIOD</h3>
+                    <div id="period-counter">#</div>
+                    <button class="add">+1</button>
+                </div>
+                <!-- Guest Box -->
+                <div class="team">
+                    <h3 class="headers">GUEST</h3>
+                    <div class="score">
+                        <span id="score-points-guest">#</span>
+                    </div>
+                    <div class="add-points">
+                        <button class="one-add-points">+1</button>
+                        <button class="two-add-points">+2</button>
+                        <button class="three-add-points">+3</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>GUEST</h3>
+            <!-- Bottom Half of the Container -->
+            <div class="bottom-half">
+                <!-- Foul Box for Home -->
+                <div class="fouls-home">
+                    <h3>FOULS</h3>
+                    <div class="bottom-half-counter-el">
+                        <span id="fouls-home-counter-el">#</span>
+                    </div>
+                    <button class="add">+1</button>
+                </div>
+                <!-- Timeout Box for Home -->
+                <div class="timeout-home">
+                    <h3>TIMEOUTS</h3>
+                    <div class="bottom-half-counter-el">
+                        <span id="timeouts-home-counter-el">#</span>
+                    </div>
+                    <button class="add">+1</button>
+                </div>
+                <div class="fouls-guest">
+                    <h3>FOULS</h3>
+                    <div class="bottom-half-counter-el">
+                        <span id="fouls-guest-counter-el">#</span>
+                    </div>
+                    <button class="add">+1</button>
+                </div>
+                <div class="timeout-guest">
+                    <h3>TIMEOUTS</h3>
+                    <div class="bottom-half-counter-el">
+                        <span id="timeouts-guest-counter-el">#</span>
+                    </div>
+                    <button class="add">+1</button>
+                </div>
             </div>
         </div>
         <script src="index.js"></script>
