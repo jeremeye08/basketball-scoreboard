@@ -68,7 +68,7 @@ body {
 .bottom-half {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: auto;
 }
 
@@ -92,12 +92,12 @@ body {
 }
 
 .add-points-el {
-    font-family: "Oxanium", sans-serif;
-    font-weight: 600;
     font-size: 40px;
-    background: #edf2f4;
+    color: #fff;
+    background: #023047;
     border-radius: 5px;
-    padding: 2px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .score {
@@ -127,9 +127,10 @@ body {
 
 #new-game {
     margin: 60px 0 50px;
-    padding: 6px 12px;
-    background: red;
+    padding: 12px 24px;
+    background: rgb(252, 40, 40);
     color: #fff;
+    cursor: pointer;
 }
 
 #period-counter {
@@ -162,22 +163,43 @@ body {
     align-items: center;
 }
 
-h4:active:hover {
-    color: #fb8500;
-    transition: color 0.3ms ease;
-}
-
-h4:hover {
+.half-buttons {
+    background: #023047;
+    color: inherit;
+    padding: 10px 10px;
     cursor: pointer;
-    color: #ffb703;
-    transition: color 0.3s ease;
 }
 
-h4:active {
-    color: #fb8500;
-    transition: color 0.3ms ease;
+#new-game:hover {
+    background: rgb(228, 0, 0);
+    transition: background 0.3s ease;
 }
 
-#new-game-header {
+#new-game:active:hover {
+    background: rgb(206, 0, 0);
+    transition: background 0.3ms linear;
+}
+
+.add-points-el:hover {
+    background: #ffb703;
     color: #edf2f4;
+    transition: background 0.3s ease;
+}
+
+.add-points-el:active {
+    background: #fb8500;
+    color: #edf2f4;
+    transition: background 0.3ms linear;
+}
+
+.half-buttons:hover {
+    background: #ffb701;
+    color: #edf2f4;
+    transition: background 0.3s ease;
+}
+
+.half-buttons:active {
+    background: #fb8500;
+    color: #edf2f4;
+    transition: background 0.3ms linear;
 }
