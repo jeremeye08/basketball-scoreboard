@@ -3,13 +3,13 @@
     padding: 0;
     font-family: "Racing Sans One", sans-serif;
     box-sizing: border-box;
+    user-select: none;
 }
 
 h1 {
     font-family: "Oxanium", sans-serif;
     font-weight: 300;
     font-size: 140px;
-    color: rgb(250, 59, 59);
     text-align: right;
 }
 
@@ -125,10 +125,31 @@ body {
     color: rgb(250, 59, 59);
 }
 
-#new-game {
-    margin: 60px 0 50px;
+#toggle-check {
+    display: none;
+}
+
+#pause-resume-btn {
+    margin: 20px 0 0;
     padding: 12px 24px;
-    background: rgb(252, 40, 40);
+    width: 240px;
+    height: 70px;
+    background: #16db65;
+    color: #fff;
+    cursor: pointer;
+    font-size: 50px;
+    line-height: 0.8;
+    user-select: none;
+}
+
+#toggle-check:checked + #pause-resume-btn {
+    background: rgb(150, 0, 0);
+}
+
+#new-game {
+    margin: 20px 0 20px;
+    padding: 12px 24px;
+    background: rgb(255, 16, 16);
     color: #fff;
     cursor: pointer;
 }
@@ -171,12 +192,12 @@ body {
 }
 
 #new-game:hover {
-    background: rgb(228, 0, 0);
+    background: rgb(190, 0, 0);
     transition: background 0.3s ease;
 }
 
 #new-game:active:hover {
-    background: rgb(206, 0, 0);
+    background: rgb(146, 0, 0);
     transition: background 0.3ms linear;
 }
 
@@ -202,4 +223,26 @@ body {
     background: #fb8500;
     color: #edf2f4;
     transition: background 0.3ms linear;
+}
+
+#pause-resume-btn:hover {
+    background: #058c42;
+    transition: background 0.3s ease;
+}
+
+#pause-resume-btn:active {
+    background: #04471c;
+    transition: background 0.3ms linear;
+}
+
+.red {
+    color: rgb(250, 59, 59);
+}
+
+.green {
+    color: #16db65;
+}
+
+.white {
+    color: #edf2f4;
 }
